@@ -1,6 +1,8 @@
 syntax = "proto3";
 package jobs;
 
+import "google/protobuf/timestamp.proto";
+
 option go_package = "../jobs";
 
 message JobInformation {
@@ -12,5 +14,5 @@ message JobInformation {
   string location = 6;
   string url = 7;
   bool remote = 8;
-  string posted_at = 9;
+  google.protobuf.Timestamp posted_at = 9;
 }
