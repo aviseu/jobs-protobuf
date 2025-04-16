@@ -1,0 +1,16 @@
+syntax = "proto3";
+package jobs;
+
+option go_package = "../jobs";
+
+message JobInformation {
+  string id = 1;
+  string channel_id = 2;
+  string title = 3;
+  string description = 4;
+  string source = 5;
+  string location = 6;
+  string url = 7;
+  bool remote = 8;
+  string posted_at = 9;
+}

@@ -1,7 +1,7 @@
 syntax = "proto3";
-package jobs;
+package imports;
 
-option go_package = "../jobs";
+option go_package = "../imports";
 
 message ExecuteImportChannel {
   string import_id = 1;
