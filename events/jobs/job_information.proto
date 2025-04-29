@@ -4,6 +4,8 @@ package jobs;
 import "google/protobuf/timestamp.proto";
 
 option go_package = "../jobs";
+option php_namespace = "AV\\ProtoBuf\\Events\\Jobs";
+option php_metadata_namespace = "AV\\ProtoBuf\\Events\\Jobs\\Metadata";
 
 message JobInformation {
   string id = 1;

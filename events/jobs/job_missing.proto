@@ -2,6 +2,8 @@ syntax = "proto3";
 package jobs;
 
 option go_package = "../jobs";
+option php_namespace = "AV\\ProtoBuf\\Jobs\\Jobs";
+option php_metadata_namespace = "AV\\ProtoBuf\\Events\\Jobs\\Metadata";
 
 message JobMissing {
   string id = 1;

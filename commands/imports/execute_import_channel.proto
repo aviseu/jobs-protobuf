@@ -2,6 +2,8 @@ syntax = "proto3";
 package imports;
 
 option go_package = "../imports";
+option php_namespace = "AV\\ProtoBuf\\Commands\\Imports";
+option php_metadata_namespace = "AV\\ProtoBuf\\Commands\\Imports\\Metadata";
 
 message ExecuteImportChannel {
   string import_id = 1;
